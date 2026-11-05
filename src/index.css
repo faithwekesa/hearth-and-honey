@@ -727,3 +727,47 @@ h1, h2, h3, .lead { text-wrap: balance; }
   .sheet a:not(.btn):nth-last-of-type(2) { border-bottom: 0; }
   .sheet .btn { margin-top: 10px; background: var(--ink); color: #fff; }
 }
+
+@media (max-width: 720px) {
+  .sheet {
+    background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(255, 244, 230, 0.92));
+    backdrop-filter: blur(22px) saturate(1.6);
+    -webkit-backdrop-filter: blur(22px) saturate(1.6);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 24px 60px rgba(30, 20, 10, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+  .sheet a:not(.btn) { border-bottom-color: rgba(60, 40, 20, 0.14); color: var(--ink); }
+}
+
+@media (max-width: 640px) {
+  .sheet { padding: 2px 18px 16px; border-radius: 20px; }
+  .sheet a:not(.btn) { font-size: 19px; padding: 11px 2px; }
+  .sheet .btn { margin-top: 8px; padding: 12px 20px; font-size: 14.5px; }
+
+  .hero .pill { font-size: 10.5px; letter-spacing: 0.1em; padding: 6px 12px; margin-bottom: 16px; }
+  .hero h1 { font-size: 36px; margin-bottom: 14px; }
+  .hero .lead { font-size: 15.5px; line-height: 1.55; }
+  .hero-cta { margin-top: 20px; gap: 10px; }
+  .hero-cta .btn { padding: 11px 18px; font-size: 14px; }
+
+  h2 { font-size: 30px; }
+  .pr-head .lead, .lead { font-size: 15.5px; }
+
+  .fp, .fp.flip { padding: 30px 0 40px; gap: 22px; }
+  .fp-cat { font-size: 11.5px; margin-bottom: 12px; gap: 10px; }
+  .fp-cat b { font-size: 13px; }
+  .fp-name { font-size: 30px; line-height: 1.08; margin-bottom: 10px; }
+  .fp-desc { font-size: 15.5px; line-height: 1.5; }
+  .fp-chips { gap: 7px; margin: 18px 0 20px; }
+  .fp-chips button { padding: 7px 13px; font-size: 13px; }
+  .fp-foot { gap: 10px; }
+  .fp-foot strong { font-size: 24px; }
+  .fp-btn { padding: 12px 20px; font-size: 14.5px; min-width: 0; }
+  .fp-btn svg { width: 16px; height: 16px; }
+
+  .fm-col h4 { font-size: 19px; }
+  .fm-col li a { font-size: 14px; padding: 7px 0; }
+  .cl-card h2 { font-size: 26px; }
+  .cl-btn { padding: 14px 24px; font-size: 15px; }
+  .ft p, .ft nav a { font-size: 14px; }
+}
